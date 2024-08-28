@@ -61,8 +61,13 @@ while True:
     else:
         print("Opcão inválida. Por favor, digite uma opção válida.")
     
-    res = input("Gostaria de tentar outra opção (S/N):  ").upper()
-    if res == "N":
-        break
-
-print("Programa encerrado.")
+    # Loop que verifica se o usúario quer tentar outra opção
+    while True: 
+        res = input("Gostaria de tentar outra opção (S/N):  ").upper()
+        if res == "S":
+            break # Sai do loop e volta ao menu
+        elif res == "N":
+            print("Programa encerrado.")
+            exit() # Encerra o programa
+        else: 
+            print("Opção inválida.Por favor, digite S ou N.")
