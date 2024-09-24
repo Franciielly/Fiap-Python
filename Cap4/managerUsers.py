@@ -1,4 +1,5 @@
 usuario = {}
+
 opcoes = """
 1 - Inserir
 2 - Pesquisar
@@ -45,7 +46,7 @@ while res == "S":
     else:
         print("Digite uma opção válida.")
 
-    res = input("Deseja tentar outra opção: ").upper()
+    res = input("Deseja tentar outra opção(S/N): ").upper()
 
 print("Programa encerrado.")
 
